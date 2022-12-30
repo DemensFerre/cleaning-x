@@ -36,6 +36,22 @@ button {
   background-color: transparent;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.section {
+  padding-top: 240px;
+  padding-bottom: 240px;
+  border-bottom: 1px solid #dcddeb;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 48px;
