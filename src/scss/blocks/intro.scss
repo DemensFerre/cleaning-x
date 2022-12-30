@@ -1,0 +1,47 @@
+.intro {
+  &__body {
+    display: flex;
+    align-items: center;
+    padding-left: max(15px, calc((100% - 1250px) / 2));
+  }
+
+  &__info {
+    flex-basis: 591px;
+    flex-shrink: 1;
+    margin-right: 19px;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 74px;
+    color: $color-dark-blue;
+  }
+
+  &__text {
+    margin-bottom: 34px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  &__btn {
+    padding: 26px 38px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__contacts {
+  }
+
+  &__img {
+    width: calc(100% - 591px - 19px);
+    max-width: 1000px;
+  }
+}
