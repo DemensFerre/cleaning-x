@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+.page {
+  height: 100%;
+}
+
+.page {
+  overflow-x: hidden;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 30px;
+  color: $color-text;
+}
