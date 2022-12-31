@@ -1,0 +1,56 @@
+.covid {
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px 62px;
+    border-radius: 24px;
+    background-color: $color-dark-blue;
+  }
+
+  &__info {
+    flex-basis: 556px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    padding: 10px 74px 10px 10px;
+    color: #fff;
+  }
+
+  &__desc {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+  }
+
+  &__title {
+    margin-bottom: 18px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  &__text {
+    margin-bottom: 11px;
+  }
+
+  &__row {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__btn {
+    padding: 26px 38px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__contacts {
+    .info__text {
+      color: #fff;
+    }
+  }
+}
