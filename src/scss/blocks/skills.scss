@@ -1,0 +1,63 @@
+.skills {
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__bg {
+    flex-shrink: 0;
+    flex-basis: 640px;
+  }
+
+  &__info {
+    flex: 1 1 auto;
+    flex-basis: 528px;
+    flex-grow: 1;
+    padding: 10px 10px 10px 65px;
+  }
+
+  &__title {
+    margin-bottom: 19px;
+  }
+
+  &__subtitle {
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  &__lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 55px;
+    margin-bottom: 48px;
+  }
+
+  &__col {
+    flex-basis: 150px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__item {
+    padding-left: 34px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-dark-blue;
+    background: url(../../img/svg/chek.svg) 0 0 no-repeat;
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+  }
+
+  &__btn {
+    padding: 26px 38px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
