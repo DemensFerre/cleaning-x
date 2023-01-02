@@ -10,4 +10,24 @@ const scrollHeader = () => {
   });
 };
 
+const scrollSection = () => {
+  const anchors = document.querySelectorAll(".header__nav > a[href*='#']");
+
+  anchors.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      let itemId = item.getAttribute("href");
+
+      const section = document.querySelector(`${itemId}`);
+
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    });
+  });
+};
+
 scrollHeader();
+scrollSection();
