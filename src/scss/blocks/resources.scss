@@ -1,0 +1,104 @@
+.resources {
+  border-bottom: none;
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+
+  &__top-box {
+    flex-basis: 500px;
+  }
+
+  &__title {
+    margin-bottom: 9px;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 15px 28px;
+    padding-top: 25px;
+  }
+
+  &__btn {
+    padding: 26px 38px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    &_white {
+      border: 1px solid #eff0f6;
+      color: $color-dark-blue;
+      background-color: #fff;
+      box-shadow: 0px 4px 10px rgba(20, 20, 43, 0.3);
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+}
+.card-resources {
+  flex-basis: 596px;
+  flex-grow: 1;
+  position: relative;
+  padding-bottom: 265px;
+  &__image {
+    min-height: 366px;
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 536px;
+    padding: 50px;
+    margin: 0 auto;
+    border: 1px solid #eff0f6;
+    border-radius: 24px;
+    box-shadow: 0px 2px 6px rgba(20, 20, 43, 0.04);
+    background-color: #fff;
+  }
+
+  &__title {
+    margin-bottom: 17px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 34px;
+    color: $color-dark-blue;
+  }
+
+  &__subtitle {
+    margin-bottom: 4px;
+  }
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  &__date {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    color: $color-dark-blue;
+  }
+
+  &__decor {
+    width: 50px;
+    height: 50px;
+    background-color: $color-accent;
+  }
+}
