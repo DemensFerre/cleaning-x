@@ -116,3 +116,9 @@
     line-height: 20px;
   }
 }
+
+@media screen and (max-width: 500px) {
+  .form-request {
+    padding: 20px;
+  }
+}
