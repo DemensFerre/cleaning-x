@@ -49,10 +49,12 @@
   position: relative;
   padding-bottom: 265px;
   &__image {
-    min-height: 366px;
+    height: 366px;
     img {
       display: block;
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -61,9 +63,9 @@
     bottom: 0;
     left: 0;
     right: 0;
-    max-width: 536px;
+    max-width: 100%;
     padding: 50px;
-    margin: 0 auto;
+    margin: 0 25px;
     border: 1px solid #eff0f6;
     border-radius: 24px;
     box-shadow: 0px 2px 6px rgba(20, 20, 43, 0.04);
@@ -100,5 +102,55 @@
     width: 50px;
     height: 50px;
     background-color: $color-accent;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .card-resources {
+    flex-basis: 100%;
+    padding-bottom: 170px;
+  }
+}
+@media screen and (max-width: 996px) {
+  .resources {
+    &__top {
+      margin-bottom: 35px;
+    }
+    &__top-box {
+      flex-basis: 100%;
+    }
+    &__buttons {
+      padding-top: 0;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .resources {
+    &__wrapper {
+      gap: 35px;
+    }
+  }
+  .card-resources {
+    padding-bottom: 0;
+    &__image {
+      border-radius: 24px;
+      overflow: hidden;
+    }
+    &__body {
+      position: static;
+      margin: 0;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card-resources {
+    &__image {
+      height: 280px;
+    }
+    &__body {
+      padding: 25px;
+    }
   }
 }
