@@ -58,3 +58,20 @@
     color: $color-dark-blue;
   }
 }
+
+@media screen and (max-width: 400px) {
+  .stages {
+    &__wrapper {
+      gap: 25px;
+    }
+    &__item {
+      flex-basis: auto;
+    }
+  }
+  .item-stages {
+    &__pic {
+      width: 210px;
+      height: 210px;
+    }
+  }
+}
