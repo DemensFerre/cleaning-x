@@ -59,7 +59,12 @@
     line-height: 34px;
     color: $color-dark-blue;
   }
+}
 
-  &__text {
+@media screen and (max-width: 450px) {
+  .item-services {
+    &__pic {
+      width: 200px;
+    }
   }
 }
