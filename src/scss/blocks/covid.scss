@@ -54,3 +54,39 @@
     }
   }
 }
+
+@media screen and (max-width: 1170px) {
+  .covid {
+    &__bg {
+      flex-basis: 100%;
+      img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+    &__info {
+      padding: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .covid {
+    &__info {
+      flex-basis: 100%;
+    }
+    &__row {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .covid {
+    &__title {
+      font-size: 36px;
+      line-height: 40px;
+    }
+  }
+}
