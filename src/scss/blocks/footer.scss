@@ -9,7 +9,6 @@
   &__item {
     flex-basis: 312px;
     flex-grow: 1;
-    flex-shrink: 0;
   }
 
   &__item-hours {
@@ -105,5 +104,13 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .footer {
+    &__wrapper {
+      padding: 80px 0;
+    }
   }
 }
