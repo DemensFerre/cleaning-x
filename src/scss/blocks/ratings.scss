@@ -57,3 +57,20 @@
     transform: translate(-50%, -50%);
   }
 }
+
+@media screen and (max-width: 790px) {
+  .ratings {
+    &__play {
+      width: 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .ratings {
+    &__video {
+      min-height: 250px;
+      padding-top: 0;
+    }
+  }
+}
