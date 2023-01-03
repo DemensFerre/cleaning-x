@@ -29,5 +29,25 @@ const scrollSection = () => {
   });
 };
 
+const openBurger = () => {
+  const page = document.querySelector(".page");
+  const burger = document.querySelector(".header__burger");
+  const menuMobile = document.querySelector(".header__menu-mobile");
+  const links = document.querySelectorAll(".header__link_mobile");
+
+  burger.addEventListener("click", () => {
+    menuMobile.classList.toggle("header__menu-mobile_active");
+    page.classList.toggle("page_active");
+  });
+
+  links.forEach((item) => {
+    item.addEventListener("click", () => {
+      menuMobile.classList.remove("header__menu-mobile_active");
+      page.classList.remove("page_active");
+    });
+  });
+};
+
 scrollHeader();
 scrollSection();
+openBurger();

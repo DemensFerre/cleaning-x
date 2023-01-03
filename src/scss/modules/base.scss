@@ -16,6 +16,9 @@ html,
   font-size: 21px;
   line-height: 30px;
   color: $color-text;
+  &_active {
+    overflow-y: hidden;
+  }
 }
 
 .container {
