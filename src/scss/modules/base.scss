@@ -104,3 +104,9 @@ p {
     color: $color-dark-blue;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .section {
+    padding: 80px 0;
+  }
+}

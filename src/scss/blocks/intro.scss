@@ -43,3 +43,23 @@
     max-width: 1000px;
   }
 }
+
+@media screen and (max-width: 1030px) {
+  .intro {
+    padding-top: 140px;
+    &__info {
+      flex-grow: 1;
+    }
+    &__img {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 540px) {
+  .intro {
+    &__title {
+      font-size: 52px;
+      line-height: 58px;
+    }
+  }
+}
